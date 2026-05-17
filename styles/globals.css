@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --color-background: #0b1220;
+  --color-surface: #111827;
+  --color-surface-strong: #0f172a;
+  --color-muted: #94a3b8;
+  --color-text: #e2e8f0;
+  --color-heading: #f8fafc;
+  --color-accent: #e95a0d;
+  --color-brand-blue: #037db1;
+  --color-brand-navy: #1c355e;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.24);
+  --radius: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: radial-gradient(circle at top, rgba(255, 167, 38, 0.08), transparent 34%), var(--color-background);
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-surface {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-brand-blue {
+  color: var(--color-brand-blue);
+}
+
+.bg-brand-blue {
+  background-color: var(--color-brand-blue);
+}
+
+.text-brand-navy {
+  color: var(--color-brand-navy);
+}
+
+.bg-brand-navy {
+  background-color: var(--color-brand-navy);
+}
+
+.text-heading {
+  color: var(--color-heading);
+}

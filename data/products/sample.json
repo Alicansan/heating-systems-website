@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": "p1", "name": "Kombi Boiler X100", "short": "Yüksek verimli kombi kazanı", "sku": "CBX100" },
+    { "id": "p2", "name": "Endüstriyel Radyatör R-300", "short": "Ağır hizmet radyatörü", "sku": "R300" },
+    { "id": "p3", "name": "Boiler Kontrol Ünitesi BCU-2", "short": "Kazan akıllı kontrol sistemi", "sku": "BCU2" }
+  ]
+}
