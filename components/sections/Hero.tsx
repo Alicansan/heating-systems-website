@@ -19,6 +19,7 @@ const slides = [
 export default function Hero() {
   const reduce = useReducedMotion()
   const [active, setActive] = useState(0)
+  const [offsetY, setOffsetY] = useState(0)
 
   useEffect(() => {
     if (reduce) return
@@ -28,13 +29,25 @@ export default function Hero() {
     return () => window.clearInterval(timer)
   }, [reduce])
 
+  useEffect(() => {
+    if (reduce) return
+    const handleScroll = () => {
+      setOffsetY(window.scrollY)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [reduce])
+
   const slide = slides[active]
 
   return (
     <section id="hero" className="relative min-h-[92vh] overflow-hidden py-20">
-      <div className="absolute inset-0">
-        <Image src={slide.image} alt={slide.title} priority fill className="object-cover" />
-        <div className="absolute inset-0 bg-brand-navy/75 backdrop-blur-sm" />
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div className="absolute inset-0 hero-parallax-layer" style={{ y: reduce ? 0 : offsetY * 0.08 }}>
+          <Image src={slide.image} alt={slide.title} priority fill className="object-cover" />
+          <div className="absolute inset-0 bg-brand-navy/75 backdrop-blur-sm" />
+        </motion.div>
+        <div className="hero-ambient" />
       </div>
 
       <div className="relative z-10 container grid gap-12 items-center py-16">

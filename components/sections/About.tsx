@@ -9,6 +9,7 @@ export default function About() {
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accent">Hakkımızda</p>
               <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Hassas endüstriyel kurulumlar aracılığıyla güven mühendisliği.</h2>
+              <div className="section-divider delay-1" />
               <p className="mt-5 text-muted max-w-2xl leading-8">Ticari ve endüstriyel müşterilerle işbirliği yaparak uzun vadeli güvenilirlik ve enerji verimliliği için tasarlanmış sağlam ısıtma, kazan ve tesisatçılık altyapısı sağlıyoruz.</p>
             </div>
 

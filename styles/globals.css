@@ -152,3 +152,42 @@ select {
   color: var(--color-accent);
   text-shadow: 0 0 18px rgba(233, 90, 13, 0.35);
 }
+
+.hero-parallax-layer {
+  will-change: transform;
+}
+
+.hero-ambient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255, 205, 115, 0.14), transparent 45%);
+  opacity: 0.75;
+  filter: blur(28px);
+}
+
+.section-divider {
+  width: 5rem;
+  height: 0.32rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(233, 90, 13, 1), rgba(255, 255, 255, 0.18));
+  margin-top: 1.25rem;
+  opacity: 0;
+  transform: translateX(-18px);
+  animation: dividerIn 0.8s ease forwards;
+}
+
+.section-divider.delay-1 {
+  animation-delay: 0.08s;
+}
+
+.section-divider.delay-2 {
+  animation-delay: 0.16s;
+}
+
+@keyframes dividerIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

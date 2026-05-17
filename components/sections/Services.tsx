@@ -31,6 +31,7 @@ export default function Services() {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Services</p>
             <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Technical heating and plumbing services for industry.</h2>
+            <div className="section-divider delay-1" />
             <p className="mt-4 text-muted max-w-2xl">We combine professional engineering, industrial-scale reliability, and field-tested installation practices.</p>
           </div>
         </Reveal>
