@@ -2,18 +2,18 @@
 
 :root {
   color-scheme: dark;
-  --color-background: #0b1220;
-  --color-surface: #111827;
-  --color-surface-strong: #0f172a;
-  --color-muted: #94a3b8;
-  --color-text: #e2e8f0;
-  --color-heading: #f8fafc;
-  --color-accent: #e95a0d;
-  --color-brand-blue: #037db1;
-  --color-brand-navy: #1c355e;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.24);
-  --radius: 1.5rem;
+  --color-background: #111b2e;
+  --color-surface: #172540;
+  --color-surface-strong: #132037;
+  --color-muted: #afc2d8;
+  --color-text: #f0f5fb;
+  --color-heading: #f8fbff;
+  --color-accent: #ff8b44;
+  --color-brand-blue: #4da7d9;
+  --color-brand-navy: #2c5379;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --shadow-soft: 0 24px 80px rgba(15, 25, 50, 0.22);
+  --radius: 1.75rem;
 }
 
 html {
@@ -24,7 +24,7 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  background: radial-gradient(circle at top, rgba(255, 167, 38, 0.08), transparent 34%), var(--color-background);
+  background: radial-gradient(circle at top, rgba(255, 167, 38, 0.12), transparent 28%), var(--color-background);
   color: var(--color-text);
 }
 
@@ -46,7 +46,7 @@ select {
 }
 
 .section-surface {
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(21, 37, 68, 0.88);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius);
