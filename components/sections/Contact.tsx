@@ -28,11 +28,15 @@ export default function Contact() {
         </Reveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <div className="section-surface p-6 interactive-card">
+          <div className="section-surface p-6 interactive-card phone-highlight">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Telefon araması</p>
-            <h3 className="mt-4 text-xl font-semibold text-heading">Hizmet masasını arayın</h3>
+            <h3 className="mt-4 text-2xl font-semibold text-heading">Hizmet masasını arayın</h3>
             <p className="mt-3 text-muted">Teknik koordinatörle konuşarak teklifler, tahminler ve saha değerlendirmeleri alın.</p>
-            <a href="tel:+15550183240" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">+1 (555) 018-3240</a>
+            <a href="tel:+15550183240" className="phone-number">
+              <span>📞</span>
+              +1 (555) 018-3240
+            </a>
+            <div className="mt-3 text-sm font-medium text-accent/90">Telefonla İletişim size öncelikli destek sağlar.</div>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cuma, 08:00–18:00</div>
           </div>
 

@@ -52,6 +52,32 @@ select {
   border-radius: var(--radius);
 }
 
+.phone-highlight {
+  background: linear-gradient(180deg, rgba(255, 139, 68, 0.16), rgba(255, 255, 255, 0.02));
+  border-color: rgba(255, 139, 68, 0.28);
+}
+
+.phone-highlight .phone-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0.95rem 1.4rem;
+  border-radius: 9999px;
+  background: rgba(255, 139, 68, 0.18);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 18px 40px rgba(255, 139, 68, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.phone-highlight .phone-number:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 139, 68, 0.26);
+}
+
 .text-muted {
   color: var(--color-muted);
 }

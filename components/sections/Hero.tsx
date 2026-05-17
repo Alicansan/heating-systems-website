@@ -66,11 +66,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a href="#catalog" className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_40px_rgba(233,90,13,0.28)] transition duration-300 button-glow focus:outline-none focus:ring-2 focus:ring-accent/40">
-              Kataloğu İnceleyin
-            </a>
-            <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-brand-blue bg-transparent px-6 py-3 text-sm font-semibold text-brand-blue transition duration-300 hover:bg-brand-blue/10 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/40">
+            <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-white text-brand-navy px-6 py-3 text-sm font-semibold shadow-[0_16px_50px_rgba(255,255,255,0.2)] transition duration-300 hover:bg-white/90 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/40">
               Telefonla İletişim
+            </a>
+            <a href="#catalog" className="inline-flex items-center justify-center rounded-full border border-brand-blue bg-brand-blue/10 px-6 py-3 text-sm font-semibold text-brand-blue transition duration-300 hover:bg-brand-blue/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-blue/40">
+              Kataloğu İnceleyin
             </a>
           </div>
         </motion.div>
