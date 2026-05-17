@@ -12,7 +12,7 @@ export default function About() {
               <p className="mt-5 text-muted max-w-2xl leading-8">Ticari ve endüstriyel müşterilerle işbirliği yaparak uzun vadeli güvenilirlik ve enerji verimliliği için tasarlanmış sağlam ısıtma, kazan ve tesisatçılık altyapısı sağlıyoruz.</p>
             </div>
 
-            <div className="section-surface p-8">
+            <div className="section-surface p-8 interactive-card">
               <div className="text-muted text-sm uppercase tracking-[0.2em]">Yetenekler</div>
               <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
                 <li>Endüstriyel ısıtma sistemi planlama ve danışmanlık</li>

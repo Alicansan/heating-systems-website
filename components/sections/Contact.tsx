@@ -27,19 +27,19 @@ export default function Contact() {
         </Reveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <div className="section-surface p-6">
+          <div className="section-surface p-6 interactive-card">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Telefon araması</p>
             <h3 className="mt-4 text-xl font-semibold text-heading">Hizmet masasını arayın</h3>
             <p className="mt-3 text-muted">Teknik koordinatörle konuşarak teklifler, tahminler ve saha değerlendirmeleri alın.</p>
-            <a href="tel:+15550183240" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold">+1 (555) 018-3240</a>
+            <a href="tel:+15550183240" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">+1 (555) 018-3240</a>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cuma, 08:00–18:00</div>
           </div>
 
-          <div className="section-surface p-6">
+          <div className="section-surface p-6 interactive-card">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">WhatsApp</p>
             <h3 className="mt-4 text-xl font-semibold text-heading">Saha ekibimize mesaj gönderin</h3>
             <p className="mt-3 text-muted">Proje detaylarını gönderin veya WhatsApp mesajı ile muayene planlayın.</p>
-            <a href="https://wa.me/15550183299" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold">+1 (555) 018-3299</a>
+            <a href="https://wa.me/15550183299" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">+1 (555) 018-3299</a>
             <div className="mt-2 text-sm text-muted">Acil endüstriyel ısıtma istekleri için hızlı destek</div>
           </div>
         </div>

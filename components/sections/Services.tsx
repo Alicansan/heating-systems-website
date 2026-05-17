@@ -37,8 +37,8 @@ export default function Services() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Reveal key={service.title} className="delay-100">
-              <div className="section-surface p-6 h-full">
+            <Reveal key={service.title} delay={0.05} className="delay-100">
+              <div className="section-surface p-6 h-full interactive-card">
                 <div className="text-accent text-sm uppercase tracking-[0.2em]">Hizmet</div>
                 <h3 className="mt-4 text-xl font-semibold text-heading">{service.title}</h3>
                 <p className="mt-3 text-muted text-sm leading-7">{service.description}</p>

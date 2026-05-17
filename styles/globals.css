@@ -91,3 +91,64 @@ select {
 .text-heading {
   color: var(--color-heading);
 }
+
+.section-surface {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+  transition: transform 0.32s ease, border-color 0.32s ease, background-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.section-surface:hover,
+.section-surface:focus-within {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.interactive-card {
+  transition: transform 0.32s ease, box-shadow 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
+}
+
+.interactive-card:hover,
+.interactive-card:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(233, 90, 13, 0.25);
+  box-shadow: 0 24px 64px rgba(14, 31, 64, 0.2);
+}
+
+.interactive-card:focus-within {
+  outline: 1px solid rgba(233, 90, 13, 0.35);
+  outline-offset: 4px;
+}
+
+.input-glow {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.9);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.input-glow:focus {
+  outline: none;
+  border-color: rgba(3, 125, 177, 0.9);
+  box-shadow: 0 0 0 4px rgba(3, 125, 177, 0.16);
+  background: rgba(15, 23, 42, 1);
+}
+
+.button-glow {
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.button-glow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(233, 90, 13, 0.22);
+}
+
+.glow-link {
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.glow-link:hover {
+  color: var(--color-accent);
+  text-shadow: 0 0 18px rgba(233, 90, 13, 0.35);
+}

@@ -19,9 +19,19 @@ export default function CatalogViewer({ full = false }: { full?: boolean }) {
 
   return (
     <div>
-      <div className="flex gap-3 items-center mb-4">
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Ürünlerde ara" className="p-2 bg-surface rounded flex-1" />
-        <button onClick={() => setQuery('')} className="px-3 py-2 bg-muted text-slate-100 rounded">Temizle</button>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center mb-4">
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Ürünlerde ara"
+          className="p-3 input-glow rounded-2xl w-full sm:flex-1"
+        />
+        <button
+          onClick={() => setQuery('')}
+          className="px-4 py-3 button-glow rounded-2xl bg-accent text-white font-semibold hover:bg-orange-500 transition focus:outline-none focus:ring-2 focus:ring-accent/40"
+        >
+          Temizle
+        </button>
       </div>
 
       <CatalogGrid items={filtered} full={full} onOpen={(p) => setSelected(p)} />
