@@ -10,8 +10,8 @@ const slides = [
     image: '/hero-slide-01.svg',
   },
   {
-    title: 'Endüstriyel Isıtma, Tesisat ve Radyatör Çözümleri',
-    description: 'Kazanı, tesisatçılık, radyatör montajları ve uzun vadeli operasyonel güvenilirlik için modern ürün ekosistemi.',
+    title: 'Kombi, Endüstriyel Isıtma, Tesisat ve Radyatör Çözümleri',
+    description: 'Kombi, Isı Pompası, tesisatçılık, radyatör montajları ve uzun vadeli operasyonel güvenilirlik için modern ürün ekosistemi.',
     image: '/hero-slide-02.svg',
   },
 ]
@@ -59,10 +59,10 @@ export default function Hero() {
         >
           <p className="text-xs uppercase tracking-[0.3em] text-accent">Endüstriyel Isıtma Sistemleri</p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-heading sm:text-5xl lg:text-6xl">
-            Endüstriye özel premium ısıtma, tesisat ve radyatör mühendisliği.
+            Ev ve Endüstriye özel sıfır veya ikinci el premium kombi,kazan, tesisat ve radyatör mühendisliği.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted leading-8">
-            Ölçeklenebilir kombi kazan hizmetleri, endüstriyel ısıtma sistemi tasarımı ve uzman tesisatçılık kurulumları - sağlam ve teknik yürütme ile.
+            Ölçeklenebilir kombi bakım ve teknik destek hizmetleri, endüstriyel ısıtma sistemi tasarımı ve uzman tesisatçılık kurulumları 
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">

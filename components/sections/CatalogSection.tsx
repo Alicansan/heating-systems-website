@@ -10,7 +10,7 @@ export default function CatalogSection() {
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Proje Başarıları</p>
             <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Başarıyla tamamlanan endüstriyel ısıtma projeleri</h2>
             <div className="section-divider delay-1" />
-            <p className="mt-4 text-muted max-w-2xl">Gerçekleştirdiğimiz projeleri inceleyin ve PDF raporlarına erişin.</p>
+            <p className="mt-4 text-muted max-w-2xl">Gerçekleştirdiğimiz projeleri inceleyin</p>
           </div>
         </Reveal>
 

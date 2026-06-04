@@ -9,7 +9,7 @@ export default function Header() {
     <header className="w-full py-4 bg-transparent">
       <div className="container flex items-center justify-between gap-6">
         <Link href="/" className="text-xl font-semibold transition hover:text-accent hover:-translate-y-0.5" aria-label="Anasayfa">
-          Isıtma Sistemleri A.Ş.
+          KOREVİZYON
         </Link>
 
         <nav>
