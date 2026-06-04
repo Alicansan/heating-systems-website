@@ -169,8 +169,8 @@ MIT License - see LICENSE file for details
 
 ## 📞 Contact
 
-- Phone: +1 (555) 018-3240
-- WhatsApp: +1 (555) 018-3299
+- Phone: 0554 176 89 50
+- WhatsApp: 0554 176 89 50
 - Email: info@example.com
 
 ---

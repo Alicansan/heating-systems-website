@@ -34,7 +34,7 @@ export default function Contact() {
             <p className="mt-3 text-muted">Teknik ekibimiz ile konuşarak teklifler, tahminler ve saha değerlendirmeleri alın.</p>
             <a href="tel:+5541768950" className="phone-number">
               <span>📞</span>
-              +1 (555) 018-3240
+              +1 (554) 176 89 50
             </a>
             <div className="mt-3 text-sm font-medium text-accent/90">Telefonla İletişim size öncelikli destek sağlar.</div>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cumartesi, 09:00–19:00</div>
