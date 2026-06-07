@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
 
 export const metadata: Metadata = {
-  title: 'Isıtma Sistemleri A.Ş. | Endüstriyel Isıtma ve Tesisatçılık',
+  title: 'KOREVİZYON | Endüstriyel ve Ev Isıtma ve Tesisatçılık',
   description: 'Premium endüstriyel ısıtma, soğutma ve tesisatçılık çözümleri ticari ve endüstriyel tesisler için. Kombi kazanları, radyatör kurulumu ve mühendislik hizmetleri.',
   metadataBase: new URL('https://example.com'),
   alternates: {
