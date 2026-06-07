@@ -15,9 +15,9 @@ export default function PdfViewerPage({ params }: Params) {
   const fileExists = existsSync(pdfAbsolutePath)
 
   return (
-    <section className="min-h-screen py-24 bg-background text-white">
+    <section className="min-h-screen py-24 bg-background text-text">
       <div className="container">
-        <div className="max-w-5xl rounded-3xl border border-white/10 bg-surface p-10 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
+        <div className="max-w-5xl rounded-3xl border border-white/10 bg-surface p-10 shadow-[0_30px_80px_rgba(47,56,63,0.12)]">
           <p className="text-xs uppercase tracking-[0.3em] text-accent">PDF Raporu</p>
           <h1 className="mt-4 text-3xl font-semibold text-heading">{`Proje ${params.id} PDF Görüntüleyici`}</h1>
           <p className="mt-4 text-muted leading-8">
@@ -36,7 +36,7 @@ export default function PdfViewerPage({ params }: Params) {
           )}
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <Link href="/" className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-500">
+            <Link href="/" className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent/90">
               Ana Sayfaya Dön
             </Link>
             <div className="text-sm text-muted">PDF altyapısı hazır. Dosya eklemek için `public/pdfs/` klasörünü kullanın.</div>

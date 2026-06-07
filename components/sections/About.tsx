@@ -15,7 +15,7 @@ export default function About() {
 
             <div className="section-surface p-8 interactive-card">
               <div className="text-muted text-sm uppercase tracking-[0.2em]">Yetenekler</div>
-              <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
+              <ul className="mt-6 space-y-4 text-sm leading-7 text-black-200">
                 <li>Endüstriyel ısıtma sistemi planlama ve danışmanlık</li>
                 <li>Mühendislik dokümantasyonu ve düzenleyici uyum</li>
                 <li>Koruyucu bakım ile desteklenen saha kurulumu</li>

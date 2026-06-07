@@ -28,7 +28,7 @@ export default function CatalogViewer({ full = false }: { full?: boolean }) {
         />
         <button
           onClick={() => setQuery('')}
-          className="px-4 py-3 button-glow rounded-2xl bg-accent text-white font-semibold hover:bg-orange-500 transition focus:outline-none focus:ring-2 focus:ring-accent/40"
+          className="px-4 py-3 button-glow rounded-2xl bg-accent text-white font-semibold hover:bg-accent/90 transition focus:outline-none focus:ring-2 focus:ring-accent/40"
         >
           Temizle
         </button>

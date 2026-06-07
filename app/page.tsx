@@ -8,7 +8,7 @@ import Contact from '../components/sections/Contact'
 
 export default function Page() {
   return (
-    <main className="bg-background text-white">
+    <main className="bg-background text-text">
       <Hero />
       <Services />
       <About />

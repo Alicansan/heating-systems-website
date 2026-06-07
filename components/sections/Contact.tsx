@@ -34,7 +34,7 @@ export default function Contact() {
             <p className="mt-3 text-muted">Teknik ekibimiz ile konuşarak teklifler, tahminler ve saha değerlendirmeleri alın.</p>
             <a href="tel:+5541768950" className="phone-number">
               <span>📞</span>
-              +1 (554) 176 89 50
+              554 176 89 50
             </a>
             <div className="mt-3 text-sm font-medium text-accent/90">Telefonla İletişim size öncelikli destek sağlar.</div>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cumartesi, 09:00–19:00</div>
@@ -44,7 +44,7 @@ export default function Contact() {
             <p className="text-xs uppercase tracking-[0.3em] text-accent">WhatsApp</p>
             <h3 className="mt-4 text-xl font-semibold text-heading">Saha ekibimize mesaj gönderin</h3>
             <p className="mt-3 text-muted">Yaşadığınız arızayı belirtin veya proje detaylarını gönderin veya WhatsApp mesajı ile servis için ulaşın.</p>
-            <a href="https://wa.me/5541768950" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">+1 (555) 018-3299</a>
+            <a href="https://wa.me/5541768950" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">554 176 89 50</a>
             <div className="mt-2 text-sm text-muted">Acil ev ve endüstriyel ısıtma istekleri için hızlı destek</div>
           </div>
         </div>

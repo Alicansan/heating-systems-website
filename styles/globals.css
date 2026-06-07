@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
-  --color-background: #111b2e;
-  --color-surface: #172540;
-  --color-surface-strong: #132037;
-  --color-muted: #afc2d8;
-  --color-text: #f0f5fb;
-  --color-heading: #f8fbff;
-  --color-accent: #ff8b44;
-  --color-brand-blue: #4da7d9;
-  --color-brand-navy: #2c5379;
-  --color-border: rgba(255, 255, 255, 0.12);
-  --shadow-soft: 0 24px 80px rgba(15, 25, 50, 0.22);
+  color-scheme: light;
+  --color-background: #F5F3EF;
+  --color-primary: #6A6D70;
+  --color-secondary: #2E5D66;
+  --color-surface: #ffffff;
+  --color-surface-strong: #ECE7DF;
+  --color-muted: #7F8689;
+  --color-text: #2F3336;
+  --color-heading: #1F2427;
+  --color-accent: #C49A3A;
+  --color-brand-blue: #2E5D66;
+  --color-brand-navy: #2E5D66;
+  --color-border: rgba(47, 56, 63, 0.12);
+  --shadow-soft: 0 24px 60px rgba(47, 56, 63, 0.08);
   --radius: 1.75rem;
 }
 
@@ -24,8 +26,13 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  background: radial-gradient(circle at top, rgba(255, 167, 38, 0.12), transparent 28%), var(--color-background);
+  background: var(--color-background);
   color: var(--color-text);
+}
+
+::selection {
+  background: rgba(196, 154, 58, 0.18);
+  color: #2F3336;
 }
 
 * {
@@ -39,22 +46,27 @@ select {
   font: inherit;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .section-surface {
-  background: rgba(21, 37, 68, 0.88);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius);
+  transition: transform 0.32s ease, border-color 0.32s ease, background-color 0.28s ease, box-shadow 0.28s ease;
 }
 
 .phone-highlight {
-  background: linear-gradient(180deg, rgba(255, 139, 68, 0.16), rgba(255, 255, 255, 0.02));
-  border-color: rgba(255, 139, 68, 0.28);
+  background: linear-gradient(180deg, rgba(46, 93, 102, 0.12), rgba(255, 255, 255, 0.8));
+  border-color: rgba(46, 93, 102, 0.16);
 }
 
 .phone-highlight .phone-number {
@@ -65,17 +77,17 @@ select {
   margin-top: 1.5rem;
   padding: 0.95rem 1.4rem;
   border-radius: 9999px;
-  background: rgba(255, 139, 68, 0.18);
-  color: #ffffff;
+  background: rgba(196, 154, 58, 0.14);
+  color: var(--color-text);
   font-weight: 700;
   letter-spacing: 0.01em;
-  box-shadow: 0 18px 40px rgba(255, 139, 68, 0.18);
+  box-shadow: 0 18px 40px rgba(196, 154, 58, 0.14);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 .phone-highlight .phone-number:hover {
   transform: translateY(-2px);
-  background-color: rgba(255, 139, 68, 0.26);
+  background-color: rgba(102, 184, 179, 0.26);
 }
 
 .text-muted {
@@ -118,18 +130,11 @@ select {
   color: var(--color-heading);
 }
 
-.section-surface {
-  background: rgba(15, 23, 42, 0.88);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-soft);
-  border-radius: var(--radius);
-  transition: transform 0.32s ease, border-color 0.32s ease, background-color 0.28s ease, box-shadow 0.28s ease;
-}
-
 .section-surface:hover,
 .section-surface:focus-within {
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-4px);
+  border-color: rgba(102, 184, 179, 0.16);
+  box-shadow: 0 28px 90px rgba(12, 18, 25, 0.18);
 }
 
 .interactive-card {
@@ -139,26 +144,26 @@ select {
 .interactive-card:hover,
 .interactive-card:focus-within {
   transform: translateY(-4px);
-  border-color: rgba(233, 90, 13, 0.25);
-  box-shadow: 0 24px 64px rgba(14, 31, 64, 0.2);
+  border-color: rgba(102, 184, 179, 0.18);
+  box-shadow: 0 24px 64px rgba(12, 18, 25, 0.18);
 }
 
 .interactive-card:focus-within {
-  outline: 1px solid rgba(233, 90, 13, 0.35);
+  outline: 1px solid rgba(102, 184, 179, 0.28);
   outline-offset: 4px;
 }
 
 .input-glow {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(31, 39, 44, 0.88);
   transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 .input-glow:focus {
   outline: none;
-  border-color: rgba(3, 125, 177, 0.9);
-  box-shadow: 0 0 0 4px rgba(3, 125, 177, 0.16);
-  background: rgba(15, 23, 42, 1);
+  border-color: rgba(102, 184, 179, 0.9);
+  box-shadow: 0 0 0 4px rgba(102, 184, 179, 0.14);
+  background: rgba(31, 39, 44, 1);
 }
 
 .button-glow {
@@ -167,7 +172,7 @@ select {
 
 .button-glow:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(233, 90, 13, 0.22);
+  box-shadow: 0 16px 38px rgba(102, 184, 179, 0.2);
 }
 
 .glow-link {
@@ -176,7 +181,7 @@ select {
 
 .glow-link:hover {
   color: var(--color-accent);
-  text-shadow: 0 0 18px rgba(233, 90, 13, 0.35);
+  text-shadow: 0 0 18px rgba(102, 184, 179, 0.24);
 }
 
 .hero-parallax-layer {
@@ -187,8 +192,8 @@ select {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at center, rgba(255, 205, 115, 0.14), transparent 45%);
-  opacity: 0.75;
+  background: radial-gradient(circle at center, rgba(102, 184, 179, 0.14), transparent 45%);
+  opacity: 0.72;
   filter: blur(28px);
 }
 
@@ -196,7 +201,7 @@ select {
   width: 5rem;
   height: 0.32rem;
   border-radius: 9999px;
-  background: linear-gradient(90deg, rgba(233, 90, 13, 1), rgba(255, 255, 255, 0.18));
+  background: linear-gradient(90deg, rgba(196, 154, 58, 1), rgba(46, 93, 102, 0.18));
   margin-top: 1.25rem;
   opacity: 0;
   transform: translateX(-18px);
