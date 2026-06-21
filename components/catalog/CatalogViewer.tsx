@@ -23,7 +23,7 @@ export default function CatalogViewer({ full = false }: { full?: boolean }) {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Ürünlerde ara"
+          placeholder="Ürün Ara"
           className="p-3 input-glow rounded-2xl w-full sm:flex-1"
         />
         <button

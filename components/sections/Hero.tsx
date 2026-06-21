@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <motion.div className="absolute inset-0 hero-parallax-layer" style={{ y: reduce ? 0 : offsetY * 0.08 }}>
           <Image src={slide.image} alt={slide.title} priority fill className="object-cover" />
-          <div className="absolute inset-0 bg-brand-navy/85 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-brand-navy/85 backdrop-blur-md" />
         </motion.div>
         <div className="hero-ambient" />
       </div>
@@ -62,13 +62,11 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: 'easeOut' }}
           className="max-w-3xl"
         >
-          <p className="text-xxl uppercase tracking-[0.3em] text-accent text-outline">Endüstriyel ve ev Isıtma Sistemleri</p>
+          <p className="text-2xl   text-  uppercase tracking-[0.3em] text-amber-900 text-outline">Evsel ve Endüstriyel Isıtma Sistemleri</p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-heading sm:text-5xl lg:text-6xl">
-            Ev ve Endüstriye özel sıfır veya ikinci el premium kombi,kazan, tesisat ve radyatör mühendisliği.
+            Sıfır ve revizyonlu kombi satışından doğalgaz proje uygulamalarına, endüstriyel ısıtma sistemlerinden yedek parça teminine kadar tüm ihtiyaçlarınız için profesyonel çözümler sunuyoruz.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted leading-8 text-outline">
-            Ölçeklenebilir kombi bakım ve teknik destek hizmetleri, endüstriyel ısıtma sistemi tasarımı ve uzman tesisatçılık kurulumları 
-          </p>
+          
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-white text-brand-navy px-6 py-3 text-sm font-semibold shadow-[0_16px_50px_rgba(255,255,255,0.2)] transition duration-300 hover:bg-white/90 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/40">

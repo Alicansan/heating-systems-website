@@ -24,13 +24,13 @@ export default function CompanySlideshow() {
     {
       id: 3,
       title: 'Proje 3',
-      description: 'Ticari tesisatçılık çözümleri',
+      description: 'Doğalgaz Tesisatı ve Kombi Kurulumu',
       company: 'Şirket C',
     },
     {
       id: 4,
       title: 'Proje 4',
-      description: 'Radyatör montaj ve dengeleme',
+      description: 'Merkezi Isıtma Sistemi Kurulumu',
       company: 'Şirket D',
     },
   ]
@@ -68,7 +68,7 @@ export default function CompanySlideshow() {
   const slide = slides[currentSlide]
 
   return (
-    <div className="relative w-full h-96 bg-gradient-to-br from-brand-navy/40 to-transparent rounded-3xl overflow-hidden border border-white/10">
+    <div className="relative w-full h-96 bg-linear-to-br from-brand-navy/40 to-transparent rounded-3xl overflow-hidden border border-white/10">
       <AnimatePresence initial={false} custom={direction} mode="wait">
         <Link href={`/pdf-viewer/${slide.id}`} className="absolute inset-0 block">
           <motion.div
@@ -97,7 +97,7 @@ export default function CompanySlideshow() {
             </div>
 
             <div className="mt-8 inline-flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition">
-              PDF'yi Görüntüle
+              Katalogumuzu Görüntüleyin
               <span>→</span>
             </div>
           </motion.div>
@@ -136,7 +136,7 @@ export default function CompanySlideshow() {
 
       {/* Click Hint */}
       <div className="absolute top-4 right-4 text-xs text-muted/60 pointer-events-none">
-        PDF'yi açmak için tıklayın
+        PDF&apos;yi açmak için tıklayın
       </div>
     </div>
   )

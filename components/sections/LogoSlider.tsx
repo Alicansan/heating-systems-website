@@ -16,9 +16,9 @@ export default function LogoSlider() {
         <Reveal>
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Güvenilen Markalar</p>
-            <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Endüstri lideri kazan ve ısıtma sistemleri</h2>
+            <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Güvenilir Markalar</h2>
             <div className="section-divider delay-1" />
-            <p className="mt-4 text-muted max-w-2xl">Dünya çapında bilinen ve güvenilen ısıtma teknolojileri ile çalışıyoruz.</p>
+            <p className="mt-4 text-muted max-w-2xl">Kalitesini kanıtlamış yerli ve yabancı markalarla çalışıyor, güvenilir ürünleri müşterilerimizle buluşturuyoruz.</p>
           </div>
         </Reveal>
 

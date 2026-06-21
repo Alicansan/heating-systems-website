@@ -21,7 +21,7 @@ export default function Contact() {
         <Reveal>
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">İletişim</p>
-            <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Telefonla veya WhatsApp aracılığıyla ekibimize ulaşın.</h2>
+            <h2 className="mt-3 text-3xl font-semibold text-heading sm:text-4xl">Satış, teknik servis, bakım ve proje talepleriniz için bizimle telefon veya WhatsApp üzerinden iletişime geçebilirsiniz.</h2>
             <div className="section-divider delay-1" />
             <p className="mt-4 text-muted max-w-2xl">Hızlı hizmet, ev ve endüstriyel sistem desteği için operasyon ekibimizle doğrudan iletişim kurun.</p>
           </div>
@@ -30,22 +30,22 @@ export default function Contact() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <div className="section-surface p-6 interactive-card phone-highlight">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Telefon araması</p>
-            <h3 className="mt-4 text-2xl font-semibold text-heading">Hizmet masasını arayın</h3>
-            <p className="mt-3 text-muted">Teknik ekibimiz ile konuşarak teklifler, tahminler ve saha değerlendirmeleri alın.</p>
+            <h3 className="mt-4 text-2xl font-semibold text-heading">Bizi Arayın</h3>
+            <p className="mt-3 text-muted">Ürünlerimiz, teknik servis, bakım ve proje hizmetleri hakkında bilgi almak için bizi arayın.</p>
             <a href="tel:+5541768950" className="phone-number">
               <span>📞</span>
               554 176 89 50
             </a>
-            <div className="mt-3 text-sm font-medium text-accent/90">Telefonla İletişim size öncelikli destek sağlar.</div>
+            <div className="mt-3 text-sm font-medium text-accent/90">Satış ve teknik destek ekibimize doğrudan ulaşabilirsiniz.</div>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cumartesi, 09:00–19:00</div>
           </div>
 
           <div className="section-surface p-6 interactive-card">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">WhatsApp</p>
-            <h3 className="mt-4 text-xl font-semibold text-heading">Saha ekibimize mesaj gönderin</h3>
-            <p className="mt-3 text-muted">Yaşadığınız arızayı belirtin veya proje detaylarını gönderin veya WhatsApp mesajı ile servis için ulaşın.</p>
+            <h3 className="mt-4 text-xl font-semibold text-heading">WhatsApp&apos;tan Yazın</h3>
+            <p className="mt-3 text-muted">Arıza bildirimi yapabilir, ürünler hakkında bilgi alabilir veya proje detaylarınızı WhatsApp üzerinden bize iletebilirsiniz.</p>
             <a href="https://wa.me/5541768950" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">554 176 89 50</a>
-            <div className="mt-2 text-sm text-muted">Acil ev ve endüstriyel ısıtma istekleri için hızlı destek</div>
+            <div className="mt-2 text-sm text-muted">Servis, satış ve teknik destek talepleriniz için hızlı dönüş sağlıyoruz.</div>
           </div>
         </div>
       </div>

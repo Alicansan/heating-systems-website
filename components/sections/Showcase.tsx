@@ -7,9 +7,9 @@ export default function Showcase() {
       <div className="container">
         <Reveal>
           <div>
-            <h2 className="text-2xl font-semibold">Ürün Vitrin</h2>
+            <h2 className="text-2xl font-semibold">Ürün Vitrini</h2>
             <div className="section-divider delay-1" />
-            <p className="mt-2 text-muted">Vurgulanan ekipman ve çözümler.</p>
+            <p className="mt-2 text-muted">Satışını gerçekleştirdiğimiz ürün gruplarından bazılarını inceleyebilirsiniz.</p>
           </div>
         </Reveal>
         <div className="mt-6">
