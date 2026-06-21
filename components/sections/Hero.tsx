@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: 'easeOut' }}
           className="max-w-3xl"
         >
-          <p className="text-2xl   text-  uppercase tracking-[0.3em] text-amber-900 text-outline">Evsel ve Endüstriyel Isıtma Sistemleri</p>
+          <p className="text-5xl    uppercase tracking-[0.3em] text-black text-outline">Evsel ve Endüstriyel Isıtma Sistemleri</p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-heading sm:text-5xl lg:text-6xl">
             Sıfır ve revizyonlu kombi satışından doğalgaz proje uygulamalarına, endüstriyel ısıtma sistemlerinden yedek parça teminine kadar tüm ihtiyaçlarınız için profesyonel çözümler sunuyoruz.
           </h1>
@@ -72,7 +72,7 @@ export default function Hero() {
             <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-white text-brand-navy px-6 py-3 text-sm font-semibold shadow-[0_16px_50px_rgba(255,255,255,0.2)] transition duration-300 hover:bg-white/90 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/40">
               Telefonla İletişim
             </a>
-            <a href="#catalog" className="inline-flex items-center justify-center rounded-full border border-brand-blue bg-brand-blue/10 px-6 py-3 text-sm font-semibold text-brand-blue transition duration-300 hover:bg-brand-blue/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-blue/40">
+            <a href="#catalog" className="inline-flex bg-gray-200 items-center justify-center rounded-full border border-brand-blue bg-brand-blue/10 px-6 py-3 text-sm font-semibold text-brand-blue transition duration-300 hover:bg-brand-blue/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-blue/40">
               Kataloğu İnceleyin
             </a>
           </div>

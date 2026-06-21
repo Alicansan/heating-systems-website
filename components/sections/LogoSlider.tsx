@@ -1,17 +1,20 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Reveal from '../animations/Reveal'
 
 export default function LogoSlider() {
-  const logos = Array.from({ length: 8 }, (_, i) => ({
+  const logos = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
     name: `Boiler Logo ${i + 1}`,
-  }))
+    src: `/logos/${i + 1}.png`,
+  })).filter(logo => logo.id !== 5)
+    .map((logo, idx) => ({ ...logo, id: idx + 1 }))
 
   const logoLoop = [...logos, ...logos]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-transparent via-brand-navy/5 to-transparent">
+    <section className="py-20 bg-linear-to-b from-transparent via-brand-navy/5 to-transparent">
       <div className="container">
         <Reveal>
           <div className="max-w-3xl">
@@ -32,13 +35,16 @@ export default function LogoSlider() {
             {logoLoop.map((logo, index) => (
               <motion.div
                 key={`${logo.id}-${index}`}
-                className="flex-shrink-0 min-w-[16rem] rounded-3xl border border-white/10 bg-white/5 p-6 flex items-center justify-center"
+                className="shrink-0 min-w-[16rem] rounded-3xl border border-white/10 bg-white/5 p-6 flex items-center justify-center"
                 whileHover={{ y: -4 }}
               >
-                <div className="w-full h-full flex flex-col items-center justify-center gap-3">
-                  <div className="w-full h-full rounded-3xl border border-dashed border-white/20 bg-white/5 flex items-center justify-center p-6 text-center text-white/40">
-                    <span>{logo.name}</span>
-                  </div>
+                <div className="w-full h-32 relative flex items-center justify-center">
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </motion.div>
             ))}

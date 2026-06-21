@@ -29,16 +29,16 @@ export default function Header() {
 
           <ul id="main-navigation" className={`md:flex md:items-center md:gap-6 text-sm text-muted ${open ? 'block mt-3' : 'hidden'}`}>
             <li>
-              <a href="#services" onClick={() => setOpen(false)} className="block py-2 md:py-0 transition hover:text-heading hover:-translate-y-0.5">Hizmetler</a>
+              <a href="#services" onClick={() => setOpen(false)} className="block py-2 text-xl md:py-0 transition hover:text-heading hover:-translate-y-0.5">Hizmetler</a>
             </li>
             <li>
-              <a href="#showcase" onClick={() => setOpen(false)} className="block py-2 md:py-0 transition hover:text-heading hover:-translate-y-0.5">Ürünler</a>
+              <a href="#showcase" onClick={() => setOpen(false)} className="block py-2 text-xl md:py-0 transition hover:text-heading hover:-translate-y-0.5">Ürünler</a>
             </li>
             <li>
-              <a href="#catalog" onClick={() => setOpen(false)} className="block py-2 md:py-0 transition hover:text-heading hover:-translate-y-0.5">Katalog</a>
+              <a href="#catalog" onClick={() => setOpen(false)} className="block py-2 text-xl md:py-0 transition hover:text-heading hover:-translate-y-0.5">Katalog</a>
             </li>
             <li>
-              <a href="#contact" onClick={() => setOpen(false)} className="block py-2 md:py-0 transition hover:text-heading hover:-translate-y-0.5">İletişim</a>
+              <a href="#contact" onClick={() => setOpen(false)} className="block py-2 text-xl md:py-0 transition hover:text-heading hover:-translate-y-0.5">İletişim</a>
             </li>
           </ul>
         </nav>
