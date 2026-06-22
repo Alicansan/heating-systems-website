@@ -1,9 +1,19 @@
 'use client'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Reveal from '../animations/Reveal'
 
 export default function LogoSlider() {
+  const [isTablet, setIsTablet] = useState(true)
+
+  useEffect(() => {
+    const checkTablet = () => setIsTablet(window.innerWidth >= 768)
+    checkTablet()
+    window.addEventListener('resize', checkTablet)
+    return () => window.removeEventListener('resize', checkTablet)
+  }, [])
+
   const logos = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
     name: `Boiler Logo ${i + 1}`,
@@ -25,30 +35,53 @@ export default function LogoSlider() {
           </div>
         </Reveal>
 
-        <div className="mt-12 overflow-hidden">
-          <motion.div
-            className="flex gap-6 px-4 -mx-4"
-            initial={{ x: '0%' }}
-            animate={{ x: ['0%', '-50%'] }}
-            transition={{ duration: 32, ease: 'linear', repeat: Infinity }}
-          >
-            {logoLoop.map((logo, index) => (
+        <div className="mt-12">
+          {isTablet ? (
+            <div className="overflow-hidden">
               <motion.div
-                key={`${logo.id}-${index}`}
-                className="shrink-0 min-w-[16rem] rounded-3xl border border-white/10 bg-white/5 p-6 flex items-center justify-center"
-                whileHover={{ y: -4 }}
+                className="flex gap-6 px-4 -mx-4"
+                initial={{ x: '0%' }}
+                animate={{ x: ['0%', '-50%'] }}
+                transition={{ duration: 32, ease: 'linear', repeat: Infinity }}
               >
-                <div className="w-full h-32 relative flex items-center justify-center">
-                  <Image
-                    src={logo.src}
-                    alt={logo.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+                {logoLoop.map((logo, index) => (
+                  <motion.div
+                    key={`${logo.id}-${index}`}
+                    className="shrink-0 min-w-[16rem] rounded-3xl border border-white/10 bg-white/5 p-6 flex items-center justify-center"
+                    whileHover={{ y: -4 }}
+                  >
+                    <div className="w-full h-32 relative flex items-center justify-center">
+                      <Image
+                        src={logo.src}
+                        alt={logo.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </motion.div>
+                ))}
               </motion.div>
-            ))}
-          </motion.div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-6">
+              {logos.map((logo) => (
+                <motion.div
+                  key={logo.id}
+                  className="rounded-3xl border border-white/10 bg-white/5 p-6 flex items-center justify-center"
+                  whileHover={{ y: -4 }}
+                >
+                  <div className="w-full h-32 relative flex items-center justify-center">
+                    <Image
+                      src={logo.src}
+                      alt={logo.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

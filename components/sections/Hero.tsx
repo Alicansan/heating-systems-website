@@ -62,8 +62,8 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: 'easeOut' }}
           className="max-w-3xl"
         >
-          <p className="text-5xl    uppercase tracking-[0.3em] text-black text-outline">Evsel ve Endüstriyel Isıtma Sistemleri</p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-heading sm:text-5xl lg:text-6xl">
+          <p className=" text-xl drop-shadow-[0_2px_2px_rgba(0,0,0,1)] sm:text-4xl uppercase tracking-[0.3em] text-white text-outline">Evsel ve Endüstriyel Isıtma Sistemleri</p>
+          <h1 className=" mt-4 text-4xl font-semibold leading-tight text-heading sm:text-5xl lg:text-6xl drop-shadow-[0_2px_2px_rgba(255,255,255,0.6)]">
             Sıfır ve revizyonlu kombi satışından doğalgaz proje uygulamalarına, endüstriyel ısıtma sistemlerinden yedek parça teminine kadar tüm ihtiyaçlarınız için profesyonel çözümler sunuyoruz.
           </h1>
           
