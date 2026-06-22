@@ -13,7 +13,7 @@ export default function Header() {
             KOREVİZYON
           </Link>
           <div className="text-sm text-muted">Basınevleri Mah. Selçuklu Cad. 61/A, 06400 Keçiören/Ankara</div>
-          <div className="text-sm font-semibold text-accent">554 176 89 50</div>
+          <span className="text-sm font-semibold md:text-3xl text-accent">0554 176 89 50</span>
         </div>
 
         <nav className="w-full md:w-auto">

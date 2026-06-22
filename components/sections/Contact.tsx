@@ -34,7 +34,7 @@ export default function Contact() {
             <p className="mt-3 text-muted">Ürünlerimiz, teknik servis, bakım ve proje hizmetleri hakkında bilgi almak için bizi arayın.</p>
             <a href="tel:+5541768950" className="phone-number">
               <span>📞</span>
-              554 176 89 50
+              0554 176 89 50
             </a>
             <div className="mt-3 text-sm font-medium text-accent/90">Satış ve teknik destek ekibimize doğrudan ulaşabilirsiniz.</div>
             <div className="mt-2 text-sm text-muted">Pazartesi–Cumartesi, 09:00–19:00</div>
@@ -44,7 +44,7 @@ export default function Contact() {
             <p className="text-xs uppercase tracking-[0.3em] text-accent">WhatsApp</p>
             <h3 className="mt-4 text-xl font-semibold text-heading">WhatsApp&apos;tan Yazın</h3>
             <p className="mt-3 text-muted">Arıza bildirimi yapabilir, ürünler hakkında bilgi alabilir veya proje detaylarınızı WhatsApp üzerinden bize iletebilirsiniz.</p>
-            <a href="https://wa.me/5541768950" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">554 176 89 50</a>
+            <a href="https://wa.me/5541768950" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-accent font-semibold glow-link">0554 176 89 50</a>
             <div className="mt-2 text-sm text-muted">Servis, satış ve teknik destek talepleriniz için hızlı dönüş sağlıyoruz.</div>
           </div>
         </div>
