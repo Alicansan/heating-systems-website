@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <motion.div className="absolute inset-0 hero-parallax-layer" style={{ y: reduce ? 0 : offsetY * 0.08 }}>
           <Image src={slide.image} alt={slide.title} priority fill className="object-cover" />
-          <div className="absolute inset-0 bg-brand-navy/85 backdrop-blur-md" />
+          <div className="absolute inset-0 bg-brand-navy/85 backdrop-blur-sm" />
         </motion.div>
         <div className="hero-ambient" />
       </div>
